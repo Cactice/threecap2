@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbaicoianu/threecap"
+    "url": "git+https://github.com/jbaicoianu/threecap.git"
   },
   "keywords": [
     "three",
@@ -19,5 +19,16 @@
     "webgl",
     "ffmpeg",
     "emscripten"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/jbaicoianu/threecap/issues"
+  },
+  "homepage": "https://github.com/jbaicoianu/threecap#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "ffmpeg.js": "^3.1.9001"
+  }
 }
