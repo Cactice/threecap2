@@ -29,6 +29,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "ffmpeg.js": "^3.1.9001"
+    "ffmpeg.js": "^3.1.9001",
+    "webpack": "^4.29.6"
   }
 }
