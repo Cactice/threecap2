@@ -87,7 +87,10 @@ THREEcapRenderPass.prototype = {
 		}
 
 	},
-
+	setSize: function(width, height) {
+    this.width = width
+    this.height = height
+  },
 	updateCaptureData: function(width, height) {
 		var readBuffer = this.lastframe;
 		if (readBuffer) {
@@ -170,7 +173,7 @@ THREEcapRenderPass.prototype = {
 		return new Promise(function(resolve, reject) {
 			var worker = new Worker('/scripts/vrcade/imageworker-' + format + '.js');
 			worker.addEventListener('message', function(ev) {
-				resolve(ev.data);					
+				resolve(ev.data);
 			}.bind(this));
 
 			var workermsg = {
